@@ -553,7 +553,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 50, quality = 2 },
@@ -623,7 +623,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 50, quality = 2 },
@@ -661,7 +661,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Mote of Pure Void", icon = "inv_12_profession_thematicfoozles_moteofpurevoid_blue", quantity = 10, quality = 3 },
@@ -1965,7 +1965,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Tailoring",
             icon = "ui_profession_tailoring",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 3, quality = 1 },
@@ -2256,7 +2256,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 50, quality = 2 },
@@ -2329,7 +2329,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 80
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 50, quality = 1 },
@@ -2363,7 +2363,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
@@ -2569,7 +2569,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Jewelcrafting",
             icon = "ui_profession_jewelcrafting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 50, quality = 2 },
@@ -3262,7 +3262,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Mote of Light", icon = "inv_12_profession_thematicfoozles_moteofpurelight_gold", quantity = 10, quality = 3 },
@@ -3281,7 +3281,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Tailoring",
             icon = "ui_profession_tailoring",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 3, quality = 1 },
@@ -3353,7 +3353,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Jewelcrafting",
             icon = "ui_profession_jewelcrafting",
-            rank = 80
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 25, quality = 1 },
@@ -3370,7 +3370,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
@@ -3456,7 +3456,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 50, quality = 2 },
@@ -3819,7 +3819,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 32, quality = 2 },
@@ -4057,7 +4057,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Jewelcrafting",
             icon = "ui_profession_jewelcrafting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 25, quality = 1 },
@@ -4142,7 +4142,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 30, quality = 2 },
@@ -4176,7 +4176,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Leatherworking",
             icon = "ui_profession_leatherworking",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Majestic Hide", icon = "inv_12_skinning_stormchargedleather1", quantity = 2, quality = 4 },
@@ -4245,7 +4245,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Leatherworking",
             icon = "ui_profession_leatherworking",
-            rank = 80
+            rank = 70
         },
         reagents = {
             { name = "Majestic Hide", icon = "inv_12_skinning_stormchargedleather1", quantity = 2, quality = 4 },
@@ -4348,7 +4348,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 4, quality = 2 },
@@ -4446,7 +4446,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 22, quality = 2 },
@@ -4514,7 +4514,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Luminant Flux", icon = "inv_10_blacksmithing_craftedoptional_blacksmithdye_fire", quantity = 10, quality = 1 },
@@ -4566,11 +4566,11 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Blacksmithing",
             icon = "ui_profession_blacksmithing",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 26, quality = 2 },
-            { name = "Core Alloy", icon = "inv_blacksmithingalloys_green", quantity = 18, quality = 2 },
+            { name = "Refulgent Copper Ingot", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_thoriuminfused", quantity = 18, quality = 2 },
             { name = "Gloaming Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_gloaming", quantity = 5, quality = 2 },
             { name = "Sterling Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_dazzling", quantity = 5, quality = 2 },
         }
@@ -4583,7 +4583,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 24, quality = 2 },
@@ -4599,7 +4599,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
@@ -4617,11 +4617,11 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Blacksmithing",
             icon = "ui_profession_blacksmithing",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 26, quality = 2 },
-            { name = "Core Alloy", icon = "inv_blacksmithingalloys_green", quantity = 18, quality = 2 },
+            { name = "Refulgent Copper Ingot", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_thoriuminfused", quantity = 18, quality = 2 },
             { name = "Gloaming Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_gloaming", quantity = 5, quality = 2 },
             { name = "Sterling Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_dazzling", quantity = 5, quality = 2 },
         }
@@ -4667,7 +4667,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Tailoring",
             icon = "ui_profession_tailoring",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 3, quality = 1 },
@@ -4684,7 +4684,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 22, quality = 2 },
@@ -4716,7 +4716,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 24, quality = 2 },
@@ -4750,7 +4750,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Jewelcrafting",
             icon = "ui_profession_jewelcrafting",
-            rank = 80
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 26, quality = 2 },
@@ -4767,7 +4767,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 80
+            rank = 70
         },
         reagents = {
             { name = "Mote of Wild Magic", icon = "inv_12_profession_thematicfoozles_moteofwildmadic_lightgreen", quantity = 10, quality = 3 },
@@ -4787,7 +4787,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Tailoring",
             icon = "ui_profession_tailoring",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 3, quality = 1 },
@@ -4804,7 +4804,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
@@ -4820,7 +4820,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 26, quality = 2 },
@@ -4838,11 +4838,11 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Blacksmithing",
             icon = "ui_profession_blacksmithing",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 12, quality = 2 },
-            { name = "Core Alloy", icon = "inv_blacksmithingalloys_green", quantity = 8, quality = 2 },
+            { name = "Refulgent Copper Ingot", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_thoriuminfused", quantity = 8, quality = 2 },
             { name = "Gloaming Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_gloaming", quantity = 2, quality = 2 },
             { name = "Sterling Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_dazzling", quantity = 2, quality = 2 },
         }
@@ -4855,10 +4855,10 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
-            { name = "Mote of Primal Energy", icon = "icon_upgradestone_water_rare", quantity = 10, quality = 1 },
+            { name = "Mote of Primal Energy", icon = "inv_12_profession_thematicfoozles_moteofprimalenergy_darkorange", quantity = 10, quality = 3 },
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 32, quality = 2 },
             { name = "Azeroot", icon = "inv_herb_earthroot", quantity = 10, quality = 2 },
             { name = "Radiant Shard", icon = "inv_12_profession_enchanting_enchantingshard_blue", quantity = 15, quality = 3 },
@@ -4873,7 +4873,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Alchemy",
             icon = "ui_profession_alchemy",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Mote of Pure Void", icon = "inv_12_profession_thematicfoozles_moteofpurevoid_blue", quantity = 6, quality = 3 },
@@ -4890,7 +4890,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 6, quality = 2 },
@@ -4906,10 +4906,10 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Alchemy",
             icon = "ui_profession_alchemy",
-            rank = 0
+            rank = 70
         },
         reagents = {
-            { name = "Mote of Primal Energy", icon = "icon_upgradestone_water_rare", quantity = 6, quality = 1 },
+            { name = "Mote of Primal Energy", icon = "inv_12_profession_thematicfoozles_moteofprimalenergy_darkorange", quantity = 6, quality = 3 },
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 32, quality = 2 },
             { name = "Composite Flora", icon = "inv_12_profession_alchemy_alchemyreagents_orange", quantity = 4, quality = 2 },
             { name = "Wondrous Synergist", icon = "spell_animaardenweald_orb", quantity = 4, quality = 3 },
@@ -4923,7 +4923,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 6, quality = 2 },
@@ -4939,7 +4939,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Jewelcrafting",
             icon = "ui_profession_jewelcrafting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
@@ -4955,7 +4955,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Enchanting",
             icon = "ui_profession_enchanting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Luminant Flux", icon = "inv_10_blacksmithing_craftedoptional_blacksmithdye_fire", quantity = 10, quality = 1 },
@@ -4973,7 +4973,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Tailoring",
             icon = "ui_profession_tailoring",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 3, quality = 1 },
@@ -4990,7 +4990,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Tailoring",
             icon = "ui_profession_tailoring",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Silverleaf Thread", icon = "inv_12_profession_tailoring_tailoringspecializations_fiberarts", quantity = 3, quality = 1 },
@@ -5007,11 +5007,11 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Blacksmithing",
             icon = "ui_profession_blacksmithing",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
-            { name = "Core Alloy", icon = "inv_blacksmithingalloys_green", quantity = 12, quality = 2 },
+            { name = "Refulgent Copper Ingot", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_thoriuminfused", quantity = 12, quality = 2 },
             { name = "Gloaming Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_gloaming", quantity = 3, quality = 2 },
             { name = "Sterling Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_dazzling", quantity = 3, quality = 2 },
         }
@@ -5024,7 +5024,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Leatherworking",
             icon = "ui_profession_leatherworking",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Majestic Hide", icon = "inv_12_skinning_stormchargedleather1", quantity = 1, quality = 4 },
@@ -5041,11 +5041,11 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Blacksmithing",
             icon = "ui_profession_blacksmithing",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
-            { name = "Core Alloy", icon = "inv_blacksmithingalloys_green", quantity = 12, quality = 2 },
+            { name = "Refulgent Copper Ingot", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_thoriuminfused", quantity = 12, quality = 2 },
             { name = "Gloaming Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_gloaming", quantity = 3, quality = 2 },
             { name = "Sterling Alloy", icon = "inv_12_profession_blacksmithing_blacksmithingalloys_dazzling", quantity = 3, quality = 2 },
         }
@@ -5058,7 +5058,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 28, quality = 2 },
@@ -5076,7 +5076,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 24, quality = 2 },
@@ -5092,7 +5092,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Engineering",
             icon = "ui_profession_engineering",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 22, quality = 2 },
@@ -5110,7 +5110,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Leatherworking",
             icon = "ui_profession_leatherworking",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Majestic Hide", icon = "inv_12_skinning_stormchargedleather1", quantity = 1, quality = 4 },
@@ -5127,7 +5127,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Leatherworking",
             icon = "ui_profession_leatherworking",
-            rank = 80
+            rank = 70
         },
         reagents = {
             { name = "Majestic Hide", icon = "inv_12_skinning_stormchargedleather1", quantity = 1, quality = 4 },
@@ -5144,7 +5144,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 18, quality = 2 },
@@ -5160,10 +5160,10 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Alchemy",
             icon = "ui_profession_alchemy",
-            rank = 0
+            rank = 70
         },
         reagents = {
-            { name = "Mote of Primal Energy", icon = "icon_upgradestone_water_rare", quantity = 6, quality = 1 },
+            { name = "Mote of Primal Energy", icon = "inv_12_profession_thematicfoozles_moteofprimalenergy_darkorange", quantity = 6, quality = 3 },
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 8, quality = 2 },
             { name = "Composite Flora", icon = "inv_12_profession_alchemy_alchemyreagents_orange", quantity = 4, quality = 2 },
             { name = "Wondrous Synergist", icon = "spell_animaardenweald_orb", quantity = 4, quality = 3 },
@@ -5177,7 +5177,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Alchemy",
             icon = "ui_profession_alchemy",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Mote of Pure Void", icon = "inv_12_profession_thematicfoozles_moteofpurevoid_blue", quantity = 8, quality = 3 },
@@ -5194,7 +5194,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Leatherworking",
             icon = "ui_profession_leatherworking",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Majestic Hide", icon = "inv_12_skinning_stormchargedleather1", quantity = 1, quality = 4 },
@@ -5213,7 +5213,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Jewelcrafting",
             icon = "ui_profession_jewelcrafting",
-            rank = 0
+            rank = 70
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 48, quality = 2 },
@@ -5230,7 +5230,7 @@ Craftpad.Data.HousingItems = {
         profession = {
             name = "Midnight Inscription",
             icon = "ui_profession_inscription",
-            rank = 0
+            rank = 85
         },
         reagents = {
             { name = "Thalassian Lumber", icon = "ui_resourcelumbermidnight", quantity = 26, quality = 2 },
