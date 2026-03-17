@@ -1,0 +1,9 @@
+package-as: Craftpad
+
+ignore:
+  - .busted
+  - .luacheckrc
+  - .github
+  - Makefile
+  - test_helpers
+  - "**/*_spec.lua"
