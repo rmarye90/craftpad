@@ -8,6 +8,26 @@ local THROTTLE_SECONDS = 5
 -- Will be loaded from SavedVariables
 local professionCache = {}
 local lastBroadcastTime = 0
+
+local EXPANSION_NAMES = {
+    [0] = "Classic",
+    [1] = "The Burning Crusade",
+    [2] = "Wrath of the Lich King",
+    [3] = "Cataclysm",
+    [4] = "Mists of Pandaria",
+    [5] = "Warlords of Draenor",
+    [6] = "Legion",
+    [7] = "Battle for Azeroth",
+    [8] = "Shadowlands",
+    [9] = "Dragonflight",
+    [10] = "The War Within",
+    [11] = "Midnight",
+}
+
+function Craftpad.Community.GetExpansionName(expansionID)
+    return EXPANSION_NAMES[expansionID] or "Unknown"
+end
+
 -- Initialize SavedVariables
 local function init_saved_variables()
     if not CraftpadDB then
@@ -18,55 +38,87 @@ local function init_saved_variables()
     end
     professionCache = CraftpadDB.professionCache
 end
--- Get player's current professions
+
+-- Get player's current professions with expansion data
 local function get_player_professions()
     local professions = {}
-    local prof1, prof2 = GetProfessions()
-    for _, profIndex in ipairs({prof1, prof2}) do
-        if profIndex then
-            local name, icon, skillLevel, maxSkillLevel, _, _, skillLine =
-                GetProfessionInfo(profIndex)
-            if name and skillLine then
-                table.insert(professions, {
-                    name = name,
-                    icon = icon,
-                    skillLevel = skillLevel,
-                    maxSkillLevel = maxSkillLevel,
-                    skillLineID = skillLine
-                })
+
+    -- Prefer C_TradeSkillUI for expansion-specific data (Dragonflight+)
+    if C_TradeSkillUI and C_TradeSkillUI.GetAllProfessionTradeSkillLines then
+        local allLines = C_TradeSkillUI.GetAllProfessionTradeSkillLines()
+        if allLines then
+            for _, skillLineID in ipairs(allLines) do
+                local info = C_TradeSkillUI.GetProfessionInfoBySkillLineID(skillLineID)
+                if info and info.isPrimaryProfession
+                    and info.currentSkillLevel and info.currentSkillLevel > 0 then
+                    table.insert(professions, {
+                        name        = info.displayName or info.professionName or "",
+                        icon        = info.icon or 0,
+                        skillLevel  = info.currentSkillLevel,
+                        maxSkillLevel = info.maxSkillLevel or 0,
+                        skillLineID = skillLineID,
+                        expansionID = info.expansionID or 0,
+                    })
+                end
             end
         end
     end
+
+    -- Fallback: GetProfessions() without expansion data
+    if #professions == 0 then
+        local prof1, prof2 = GetProfessions()
+        for _, profIndex in ipairs({prof1, prof2}) do
+            if profIndex then
+                local name, icon, skillLevel, maxSkillLevel, _, _, skillLine =
+                    GetProfessionInfo(profIndex)
+                if name and skillLine then
+                    table.insert(professions, {
+                        name        = name,
+                        icon        = icon,
+                        skillLevel  = skillLevel,
+                        maxSkillLevel = maxSkillLevel,
+                        skillLineID = skillLine,
+                        expansionID = 0,
+                    })
+                end
+            end
+        end
+    end
+
     return professions
 end
+
 -- Serialize profession data for transmission
+-- Format: skillLineID:skillLevel:maxSkillLevel:name:icon:expansionID
 local function serialize_profession_data(professions)
     local parts = {}
     for _, prof in ipairs(professions) do
-        -- Format: skillLineID:skillLevel:maxSkillLevel:name:icon
-        table.insert(parts, string.format("%d:%d:%d:%s:%s",
+        table.insert(parts, string.format("%d:%d:%d:%s:%s:%d",
             prof.skillLineID,
             prof.skillLevel,
             prof.maxSkillLevel,
             prof.name,
-            prof.icon
+            tostring(prof.icon),
+            prof.expansionID or 0
         ))
     end
     return table.concat(parts, "|")
 end
--- Deserialize profession data from transmission
+
+-- Deserialize profession data from transmission (backward compatible)
 local function deserialize_profession_data(data)
     local professions = {}
     for profString in string.gmatch(data, "[^|]+") do
-        local skillLineID, skillLevel, maxSkillLevel, name, icon =
-            string.match(profString, "(%d+):(%d+):(%d+):([^:]+):([^:]+)")
+        local skillLineID, skillLevel, maxSkillLevel, name, icon, expansionID =
+            string.match(profString, "(%d+):(%d+):(%d+):([^:]+):([^:]+):?(%d*)")
         if skillLineID then
             table.insert(professions, {
-                skillLineID = tonumber(skillLineID),
-                skillLevel = tonumber(skillLevel),
+                skillLineID   = tonumber(skillLineID),
+                skillLevel    = tonumber(skillLevel),
                 maxSkillLevel = tonumber(maxSkillLevel),
-                name = name,
-                icon = icon
+                name          = name,
+                icon          = icon,
+                expansionID   = tonumber(expansionID) or 0,
             })
         end
     end
@@ -165,6 +217,27 @@ function Craftpad.Community.GetCachedPlayerCount()
         count = count + 1
     end
     return count
+end
+
+-- Return all cached players as a sorted list
+function Craftpad.Community.GetAllCachedPlayers()
+    clean_cache()
+    local players = {}
+    for playerName, data in pairs(professionCache) do
+        table.insert(players, {
+            playerName  = playerName,
+            professions = data.professions,
+            timestamp   = data.timestamp,
+        })
+    end
+    table.sort(players, function(a, b) return a.playerName < b.playerName end)
+    return players
+end
+
+-- Re-broadcast our professions immediately (ignores throttle)
+function Craftpad.Community.RequestSync()
+    lastBroadcastTime = 0
+    broadcast_professions()
 end
 -- Event handler for profession changes
 local function handle_profession_change()

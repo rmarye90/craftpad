@@ -29,14 +29,50 @@ local function getLocalizedItemName(itemData)
     end
     return itemData.name
 end
--- Get total item count across bags, bank, and warband bank
--- Supports both itemID (preferred) and itemName (fallback)
-local function get_total_item_count(itemNameOrID)
-    -- Try modern API first (TWW - includes account bank)
-    if C_Item and C_Item.GetItemCount then
-        return C_Item.GetItemCount(itemNameOrID, true, false, false, true) or 0
+-- Count items in warband bank tabs by iterating slots (language-agnostic)
+local function count_in_warband_bank(itemID)
+    if not itemID or not Enum.BagIndex or not Enum.BagIndex.AccountBankTab_1 then
+        return 0
     end
-    -- Fallback for older versions
+    local total = 0
+    for tabOffset = 0, 3 do
+        local bagIndex = Enum.BagIndex.AccountBankTab_1 + tabOffset
+        local numSlots = C_Container and C_Container.GetContainerNumSlots(bagIndex) or 0
+        for slot = 1, numSlots do
+            local info = C_Container.GetContainerItemInfo(bagIndex, slot)
+            if info and info.itemID == itemID then
+                total = total + (info.stackCount or 1)
+            end
+        end
+    end
+    return total
+end
+
+-- Get total item count across bags, personal bank, and warband bank.
+-- Requires an itemID (number) for language-agnostic results.
+-- Name-based fallback only works when the client locale matches the database (enUS).
+local function get_total_item_count(itemNameOrID)
+    local itemID = tonumber(itemNameOrID)
+
+    if itemID then
+        -- ID path: fully locale-independent, includes all storage
+        local count = 0
+        if C_Item and C_Item.GetItemCount then
+            -- includeBank=true, includeUses=false, includeReagentBank=false, includeWarband=true
+            count = C_Item.GetItemCount(itemID, true, false, false, true) or 0
+        else
+            count = GetItemCount(itemID, true) or 0
+        end
+        -- Belt-and-suspenders: also scan warband bank manually in case the 5th param
+        -- is not yet supported on this client version
+        local wbCount = count_in_warband_bank(itemID)
+        return math.max(count, wbCount > 0 and count + wbCount or count)
+    end
+
+    -- Name path (English name only — returns 0 on non-enUS clients)
+    if C_Item and C_Item.GetItemCount then
+        return C_Item.GetItemCount(itemNameOrID, true) or 0
+    end
     return GetItemCount(itemNameOrID, true) or 0
 end
 -- Filter items based on search text (delegates to Search module)

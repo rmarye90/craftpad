@@ -7,3 +7,9 @@ luarocks/
 
 # Coverage
 luacov.*.out
+
+# IDE
+.cursor/
+
+# Scripts cache (generated, not needed in repo)
+scripts/reagent_ids.json

@@ -6,13 +6,15 @@ SlashCmdList["CRAFTPAD"] = function(msg)
     msg = string.lower(msg or "")
 
     if msg == "" then
-        -- Toggle main frame
         Craftpad.UI.ToggleMainFrame()
+    elseif msg == "community" or msg == "comm" then
+        Craftpad.Community.Frame.Toggle()
     elseif msg == "help" then
         print("Craftpad Commands:")
-        print("/craftpad or /cp - Toggle housing items list")
-        print("/craftpad help - Show this help")
+        print("/cp              - Liste des objets housing")
+        print("/cp community    - Métiers de la communauté")
+        print("/cp help         - Afficher cette aide")
     else
-        print("Craftpad: Unknown command. Type /craftpad help for available commands")
+        print("Craftpad: commande inconnue. Tapez /cp help pour l'aide.")
     end
 end

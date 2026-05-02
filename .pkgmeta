@@ -1,9 +1,13 @@
 package-as: Craftpad
+enable-nolib-creation: no
 
 ignore:
   - .busted
-  - .luacheckrc
+  - .cursor
   - .github
+  - .luacheckrc
   - Makefile
+  - README.md
+  - scripts
   - test_helpers
   - "**/*_spec.lua"

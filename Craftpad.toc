@@ -1,5 +1,5 @@
 ## Interface: 120000, 120001
-## Version: 0.0.2
+## Version: 0.1.0
 ## X-Curse-Project-ID: 1488217
 ## SavedVariables: CraftpadDB
 ## Title: Craftpad
@@ -15,4 +15,5 @@ Search\HousingItemSearch.lua
 Community\CommunitySync.lua
 UI\MainFrame.lua
 UI\MinimapButton.lua
+UI\CommunityFrame.lua
 Commands.lua
